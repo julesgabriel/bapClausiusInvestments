@@ -1,0 +1,17 @@
+.presentation{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+.contentPresentation {
+    width: 55%;
+}
+
+.illuPresentation{
+    width: 45%;
+}
+
+.illuPresentation img{
+    width: 100%;
+}
