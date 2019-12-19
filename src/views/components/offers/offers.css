@@ -1,0 +1,45 @@
+.offers{
+
+    background-color: #fab44b;
+}
+
+.positionOffers{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.positionOffersButtons{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adaptativContent{
+    width: 55%;
+}
+
+.contentOffers, .positionOffersButtons{
+    padding: 25px 0;
+}
+
+.positionOffersButtons button{
+
+}
+
+.contentOffers{
+    width: 80%;
+    text-align: justify;
+}
+
+.contentOffers h2{
+    padding: 30px 0;
+}
+
+.adaptativImages {
+    width: 45%;
+}
+
+.adaptativImages img{
+    width: 100%;
+}

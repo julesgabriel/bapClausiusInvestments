@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './header.css';
-import Clausius from '../../../assets/logo-fondcouleur01.png'
+import Clausius from '../../../assets/logo-idv-blanc.png'
 import CTA from "../global/button/CTA";
 
 

@@ -8,6 +8,15 @@
     width: 55%;
 }
 
+.contentPresentation h1, .contentPresentation p{
+    margin: 50px 0;
+}
+
+.contentPresentation p {
+    width: 70%;
+    text-align: justify;
+}
+
 .illuPresentation{
     width: 45%;
 }

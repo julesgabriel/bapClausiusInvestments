@@ -23,7 +23,7 @@ nav ul li {
 }
 
 .logoClausius{
-    width: 15%;
+    width: 9%;
 }
 
 .logoClausius img{
@@ -40,9 +40,10 @@ nav ul li {
     background-color: #FFFFFF;
     border: none;
     border-radius: 6px;
-    box-shadow: 3px 3px rgba(0,0,0,0.16);
-    padding: 4px 0;
+    padding: 8px 0;
     cursor: pointer;
+    color: #1e1452;
+    font-size: 16px;
 }
 
 .navButtons:hover{
@@ -52,7 +53,7 @@ nav ul li {
 }
 
 .positionActions {
-    width: 33%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,7 +1,16 @@
-h1{
-    font-size: 45px;
+h1, h2, h3, p, b {
+    color: #1e1452;
+    margin: 0;
 }
 
-h1, p {
-    color: #1e1452;
+p{
+    font-size: 18px;
+}
+
+h1{
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 70px;
 }

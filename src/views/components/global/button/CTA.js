@@ -6,7 +6,7 @@ const CTA = props => {
 
     return(
         <div>
-            <button className={props.className}>{props.content}</button>
+            <button id={props.id} onClick={props.onClick} className={props.className}>{props.content}</button>
         </div>
     )
 };
