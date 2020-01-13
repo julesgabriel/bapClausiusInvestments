@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './presentation.css';
-import accueilEchange from '../../../assets/illustrations/accueil-échange.png'
+
+import AccueilSvg from '../../../assets/illustrations/accueil.svg';
 
 class Presentation extends Component {
     render() {
@@ -17,7 +18,7 @@ class Presentation extends Component {
                     </p>
                 </div>
                 <div className="illuPresentation">
-                    <img src={accueilEchange} alt=""/>
+                    <img src={AccueilSvg} alt="Presentation Illustrations"/>
                 </div>
             </section>
         );

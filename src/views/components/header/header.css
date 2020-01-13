@@ -38,13 +38,13 @@ nav ul li {
 
 .navButtons{
     width: 130px;
-    background-color: #FFFFFF;
+    background-color: transparent;
     border: none;
     border-radius: 6px;
     padding: 8px 0;
     cursor: pointer;
-    color: #1e1452;
-    font-size: 16px;
+    color: #fff;
+    font-size: 14px;
 }
 
 .navButtons:hover{

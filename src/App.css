@@ -3,24 +3,25 @@ h1, h2, h3, p, b {
     margin: 0;
 }
 
-p{
-    font-size: 18px;
+p, a{
+    font-size: 16px;
     font-family:'Avenir LT Std 45 Book', sans-serif;
 }
 
 h1, h2,h3{
-    font-family: "Avenir LT Std 65 Medium", sans-serif;
+    font-family: "Avenir LT Std 45 Book", sans-serif;
 }
 
 h1{
-    font-size: 90px;
+    font-size: 70px;
     font-family: "Avenir LT Std 65 Medium", sans-serif;
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 45px;
 }
 
-h3{
+h3, button{
     font-size: 34px;
+    font-weight: 200;
 }
