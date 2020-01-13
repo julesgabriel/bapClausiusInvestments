@@ -20,6 +20,7 @@ nav ul {
 nav ul li {
     list-style: none;
     color: #FFFFFF;
+
 }
 
 .logoClausius{
@@ -49,7 +50,13 @@ nav ul li {
 .navButtons:hover{
     filter: brightness(95%);
     transform: scale(1.05);
-    transition: .3s;
+    transition: .5s;
+}
+
+.navButtons:not(:hover){
+    filter: brightness(100%);
+    transform: scale(1);
+    transition: .5s;
 }
 
 .positionActions {

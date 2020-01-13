@@ -7,7 +7,7 @@ class Presentation extends Component {
         return (
             <section className="presentation">
                 <div className="contentPresentation">
-                    <h1>Titre</h1>
+                    <h1>TITRE</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula laoreet dui, et
                         laoreet nunc tincidunt id. Pellentesque posuere turpis purus, eget accumsan libero bibendum

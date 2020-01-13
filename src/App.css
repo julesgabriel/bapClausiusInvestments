@@ -5,12 +5,22 @@ h1, h2, h3, p, b {
 
 p{
     font-size: 18px;
+    font-family:'Avenir LT Std 45 Book', sans-serif;
+}
+
+h1, h2,h3{
+    font-family: "Avenir LT Std 65 Medium", sans-serif;
 }
 
 h1{
     font-size: 90px;
+    font-family: "Avenir LT Std 65 Medium", sans-serif;
 }
 
 h2 {
     font-size: 70px;
+}
+
+h3{
+    font-size: 34px;
 }
