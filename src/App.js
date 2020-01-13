@@ -11,13 +11,15 @@ import Footer from "./views/components/footer/footer";
 
 
 import Team from "./views/components/team/team";
+import SignUp from "./views/components/signUp/signUp";
+import Questions from "./views/components/questions/questions";
 
 
 function App() {
     return (
         <main>
             <Header/>
-            <Team/>
+            <Questions/>
             <Footer/>
         </main>
     );

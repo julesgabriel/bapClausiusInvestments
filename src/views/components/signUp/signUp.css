@@ -1,0 +1,84 @@
+.signUpSection{
+    margin: 30px 0;
+}
+
+.signUpBox {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0 0 0 70px;
+}
+
+.accordeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.accordeon span {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    padding-bottom: 10px;
+}
+
+.formSignUp {
+    margin: 0 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formSignUp h1, .formSignUp span {
+    margin: 15px 0;
+}
+
+.formSignUp h1 {
+    font-size: 50px;
+}
+
+.formSignUp input {
+    width: 60%;
+    background-color: #FFFFFF;
+    padding: 9px 0 9px 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+#submitSignUp {
+    width: 40%;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+#submitSignUp:hover{
+    animation: submitAnim 2s ease-in-out infinite;
+}
+
+@keyframes submitAnim {
+    0%{
+        background-color: white;
+    }
+
+    50%{
+        background-color: #1e1452;
+        color: #FFFFFF;
+    }
+
+    100%{
+        background-color: #FFFFFF;
+    }
+}
+
+.fasChevron {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.spanSpace span {
+    margin: 0 10px 0 0;
+}
+
+.interactions{
+    width: 30%;
+    margin-left: 80px;
+}
