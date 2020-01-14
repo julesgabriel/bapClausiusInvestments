@@ -3,9 +3,11 @@ import './card.css'
 
 
 const Card = props => {
-    return(
+    return (
         <div className={props.class}>
-            <img src={props.img} alt={props.alt}/>
+            <div className="imgBox">
+                <img src={props.img} alt={props.alt}/>
+            </div>
             <h3>{props.title}</h3>
             <p>{props.content}</p>
         </div>

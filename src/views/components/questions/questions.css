@@ -1,0 +1,7 @@
+.questionnaire{
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}

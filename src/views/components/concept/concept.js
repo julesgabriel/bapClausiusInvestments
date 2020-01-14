@@ -10,7 +10,7 @@ class Concept extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            classConcept: '',
+            classConcept: 'conceptCard',
         }
     }
 

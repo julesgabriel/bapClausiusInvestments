@@ -21,6 +21,7 @@ function App() {
             <Header/>
             <Questions/>
             <Footer/>
+
         </main>
     );
 }
