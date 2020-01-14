@@ -1,0 +1,17 @@
+.member{
+    width: 70%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.member img{
+    min-width: 22%;
+    min-height: 300px;
+    background: rgba(0,0,0,0.2);
+    margin: auto;
+}
+
+.member .titleAndContent{
+    margin: auto;
+    width: 60%;
+}

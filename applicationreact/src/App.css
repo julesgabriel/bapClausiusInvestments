@@ -1,0 +1,27 @@
+h1, h2, h3, p, b {
+    color: #1e1452;
+    margin: 0;
+}
+
+p, a{
+    font-size: 16px;
+    font-family:'Avenir LT Std 45 Book', sans-serif;
+}
+
+h1, h2,h3{
+    font-family: "Avenir LT Std 45 Book", sans-serif;
+}
+
+h1{
+    font-size: 70px;
+    font-family: "Avenir LT Std 65 Medium", sans-serif;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3, button{
+    font-size: 34px;
+    font-weight: 200;
+}

@@ -1,0 +1,22 @@
+.card {
+    width: 30%;
+    text-align: center;
+}
+
+.card img{
+    min-width: 130px;
+    min-height: 130px;
+    border-radius: 90px;
+    margin: 0;
+}
+
+.card h3{
+    color: #1e1452;
+}
+
+.card p{
+    width: 80%;
+    color: #1e1452;
+    margin: 35px auto;
+}
+

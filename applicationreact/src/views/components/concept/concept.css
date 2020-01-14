@@ -1,0 +1,37 @@
+.concept {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.concept h2 {
+    width: 80%;
+    margin: 0 auto 35px auto;
+    color: #1e1452;
+}
+
+.positionConcept {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.imgBox{
+    margin: auto;
+    width: 30%;
+}
+
+.positionConcept img{
+    width: 100%;
+    margin: auto;
+}
+
+.conceptCard{
+    width: 30%;
+}
+
+.concept h3 {
+    margin: 10px 0;
+    text-align: center;
+}
