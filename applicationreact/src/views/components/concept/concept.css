@@ -29,9 +29,38 @@
 
 .conceptCard{
     width: 30%;
+    opacity: 0;
+}
+
+.opacity{
+    transition: opacity 1s;
+    opacity: 1;
 }
 
 .concept h3 {
     margin: 10px 0;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    h3, button {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 426px){
+
+    .conceptCard {
+        width: 100%;
+    }
+
+    .conceptCard p {
+        width: 80%;
+        margin: auto;
+    }
+
+    .positionConcept {
+        flex-wrap: wrap;
+    }
+
 }

@@ -30,10 +30,6 @@ class Questions extends Component {
         };
 
         this.calculate = (numOfA, numOfB, numOfC, numOfD) => {
-            console.log("nombre de réponses A:" + numOfA);
-            console.log("nombre de réponses B:" + numOfB);
-            console.log("nombre de réponses C:" + numOfC);
-            console.log("nombre de réponses D:" + numOfD);
 
             let multiplicator = 100 / questionNumber;
 
@@ -42,32 +38,32 @@ class Questions extends Component {
             let cPercent = numOfC * multiplicator;
             let DPercent = numOfD * multiplicator;
 
-            axios.post('/api/questions')
-                .then((req) => {
-                    console.log(req)
-                })
-                .catch((error) => {
-                    console.log(error)
-                })
+            axios.post('api/inscription/', {
+
+                /** insérer les valeurs ici*/
+
+            }).then((response) => {
+                console.log(response)
+            }).catch((err) => {
+                console.log(err.response.data)
+            })
         };
 
         this.submitQuestions = (event) => {
             event.preventDefault();
             let lengthBox = document.getElementsByClassName('boxQuestion').length;
             if (this.answers.length === lengthBox) {
-                let numOfA = this.answers.filter(function (x) {
+                let numOfA = this.answers.filter((x) => {
                     return x === "A";
                 }).length;
-
-
-                let numOfB = this.answers.filter(function (x) {
+                let numOfB = this.answers.filter((x) => {
                     return x === "B";
                 }).length;
 
-                let numOfC = this.answers.filter(function (x) {
+                let numOfC = this.answers.filter((x) => {
                     return x === "C";
                 }).length;
-                let numOfD = this.answers.filter(function (x) {
+                let numOfD = this.answers.filter((x) => {
                     return x === "D";
                 }).length;
                 this.calculate(numOfA, numOfB, numOfC, numOfD)
@@ -83,7 +79,6 @@ class Questions extends Component {
         let questions = [];
 
         window.addEventListener('load', () => {
-
 
             for (let i = 1; i <= questionNumber; i++) {
                 questions.push(<Cards

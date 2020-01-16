@@ -5,8 +5,19 @@ import CTA from "../global/button/CTA";
 import Liberty from '../../../assets/illustrations/offers/liberté.svg';
 import Pro from '../../../assets/illustrations/offers/pro.svg';
 
-const free = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nisi at sem iaculis venenatis. In ullamcorper suscipit ex in commodo. Aliquam varius libero at dapibus aliquet. Nullam mattis tincidunt enim. Etiam id urna id purus rutrum pharetra. Sed feugiat est urna, in fermentum neque bibendum sit amet. Nullam eu libero neque. Fusce a ultricies elit, id dapibus urna. Cras vitae interdum eros. In euismod congue molestie. Phasellus elementum tincidunt lectus, at dictum urna luctus eu. Donec lorem turpis, vehicula vitae varius et, ullamcorper tempus velit.";
-const pro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae tellus eget odio tempus gravida sit amet a lacus. Nullam efficitur arcu in leo vehicula placerat. Suspendisse gravida nec nibh vitae hendrerit. Nulla condimentum, nulla non consectetur efficitur, sapien nulla ultricies ipsum, ut ornare libero mauris id nulla. Vivamus urna tellus, eleifend in nisl id, aliquam malesuada risus. Suspendisse dignissim nulla nec tortor venenatis ultricies. Phasellus mattis tellus justo, id eleifend metus pulvinar quis. Vivamus ut viverra velit, id pellentesque nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus.";
+const free = "- 0€ d'abonnement mensuel \n" +
+    "- Frais de passage d'ordres à\n" +
+    "hauteur de 20% du bénéfice\n" +
+    "- Nombre d'ordres par mois illimité\n" +
+    "- Diversification du portfolio\n" +
+    "de robots de trading sans limite.";
+
+const pro = "- Abonnement mensuel de 50€ TTC\n" +
+    "- Frais de passage d’ordres réduits\n" +
+    "à 8% du bénéfice\n" +
+    "- Nombre d’ordres par mois illimité\n" +
+    "- Diversification du portfolio\n" +
+    "de robots de trading sans limite";
 
 class Offers extends Component {
     handleChange;
@@ -61,9 +72,10 @@ class Offers extends Component {
                             <p>{this.state.content}</p>
                         </div>
                         <div className="positionOffersButtons">
-                            <CTA id="free" onClick={this.handleChange} className="navButtons" content="Offre liberté"/>
-                            <CTA id="pro" onClick={this.handleChange} className="navButtons" content="Offre pro"/>
+                            <CTA id="pro" onClick={this.handleChange} className="navButtons" content="OFFRE PRO"/>
+                            <CTA id="free" onClick={this.handleChange} className="navButtons" content="OFFRE LIBERTE"/>
                         </div>
+
                     </div>
                     <div className="adaptativImages">
                         <img src={this.state.imgOffers} alt="Offre"/>

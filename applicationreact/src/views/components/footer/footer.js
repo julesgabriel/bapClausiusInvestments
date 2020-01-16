@@ -4,6 +4,9 @@ import CTA from "../global/button/CTA";
 
 import ClausiusLogoEcrit from '../../../assets/logo-fondcouleur01.png';
 
+import Facebook from '../../../assets/illustrations/social-networks/fcb-02.svg'
+import LinkedIn from '../../../assets/illustrations/social-networks/linkedin-01.svg'
+
 
 class Footer extends Component {
     render() {
@@ -23,8 +26,8 @@ class Footer extends Component {
                         <img src={ClausiusLogoEcrit} alt=""/>
                     </div>
                     <div className="socialNetwork">
-                        <span></span>
-                        <span></span>
+                        <img src={Facebook} alt="logo Facebook"/>
+                        <img src={LinkedIn} alt="logo LinkedIn"/>
                     </div>
                     <div className="cguMentions">
                         <li>Mentions légales</li>

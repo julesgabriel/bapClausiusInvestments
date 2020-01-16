@@ -1,3 +1,7 @@
+*::selection{
+    color: black;
+}
+
 h1, h2, h3, p, b {
     color: #1e1452;
     margin: 0;
@@ -24,4 +28,11 @@ h2 {
 h3, button{
     font-size: 34px;
     font-weight: 200;
+}
+
+@media screen and (max-width: 426px) {
+    h2{
+        font-size: 28px;
+    }
+
 }

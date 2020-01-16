@@ -15,3 +15,31 @@
     margin: auto;
     width: 60%;
 }
+
+@media screen and (max-width: 1024px){
+
+    .member img{
+        min-width: 30%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .member img{
+        width: 35%;
+    }
+
+    .member .titleAndContent{
+        width: 40%;
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 426px){
+    .member img{
+        min-width: 60%;
+        min-height: 250px;
+
+    }
+}

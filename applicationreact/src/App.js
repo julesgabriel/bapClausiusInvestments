@@ -11,15 +11,21 @@ import Footer from "./views/components/footer/footer";
 
 
 import Team from "./views/components/team/team";
+
 import SignUp from "./views/components/signUp/signUp";
 import Questions from "./views/components/questions/questions";
+import Cards from "./views/components/questions/cards/cards";
+import LogIn from "./views/components/logIn/login";
 
 
 function App() {
     return (
         <main>
             <Header/>
-            <Questions/>
+            <Presentation/>
+            <Concept/>
+            <Offers/>
+            <CallToSignUp/>
             <Footer/>
 
         </main>

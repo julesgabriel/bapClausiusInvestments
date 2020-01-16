@@ -21,7 +21,7 @@ footer {
     width: 50%;
 }
 
-.socialCgu{
+.socialCgu {
     display: flex;
 }
 
@@ -32,24 +32,34 @@ footer {
 }
 
 .logoFooter {
-    width: 25%;
+    width: 10%;
 }
 
-.logoFooter img{
+.logoFooter img {
     width: 100%;
 }
 
-.socialNetwork{
+.socialNetwork {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 30%;
 }
 
-.socialNetwork span{
-    min-width: 50%;
+.socialNetwork img {
+    width: 10%;
     border-radius: 900px;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
-.cguMentions, .copyrights{
+.socialNetwork img:hover {
+    filter: brightness(95%);
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.cguMentions, .copyrights {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -57,13 +67,75 @@ footer {
     color: #FFFFFF;
 }
 
-.copyrights{
+.copyrights {
     flex-direction: column-reverse;
     justify-content: normal;
     padding-bottom: 10px;
 }
 
-.cguMentions li{
+.cguMentions li {
     list-style: none;
 }
 
+@media screen and (max-width: 768px) {
+    .signUpLogin {
+        width: 35%;
+    }
+
+    .socialCgu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoFooter {
+        width: 40%;
+        margin: auto;
+    }
+
+    .socialNetwork {
+        width: 30%;
+        margin: auto;
+    }
+
+    .socialNetwork img {
+        width: 20%;
+    }
+
+    .cguMentions {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .cguMentions li {
+        border-right: 1px solid white;
+    }
+
+    .cguMentions, .copyrights {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .concept {
+        padding: 30px 0;
+    }
+
+    .signUpLogin {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .signUpLogin .navButtons {
+        width: fit-content;
+    }
+
+    .logoFooter, .socialNetwork, .cguMentions {
+        margin-bottom: 10px;
+    }
+}

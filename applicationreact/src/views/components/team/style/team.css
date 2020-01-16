@@ -16,3 +16,29 @@
     width: 60%;
     margin: 30px auto;
 }
+
+
+@media screen and (max-width: 768px) {
+    .team h2{
+        font-size: 29px ;
+    }
+
+    .team h3{
+        font-size: 20px ;
+    }
+
+
+}
+
+@media screen and (max-width: 426px) {
+    .team .member{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .team h2, .team h3 {
+        margin: 15px 0;
+    }
+
+
+}

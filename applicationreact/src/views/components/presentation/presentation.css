@@ -1,7 +1,6 @@
 .presentation{
     display: flex;
     width: 100%;
-
 }
 
 .contentPresentation {
@@ -10,7 +9,12 @@
 
 .contentPresentation h1, .contentPresentation p{
     width: 80%;
-    margin: 50px auto;
+    margin: 30px auto 10px auto;
+}
+
+.contentPresentation h2{
+    width: 80%;
+    margin: 0 auto 30px auto;
 }
 
 .contentPresentation p {
@@ -21,4 +25,37 @@
 .illuPresentation{
     width: 80%;
 }
+
+@media screen and (max-width: 768px){
+    .illuPresentation {
+        width: 100%;
+    }
+
+    .contentPresentation h1 {
+        font-size: 50px;
+    }
+
+    .contentPresentation h1, .contentPresentation p {
+        margin: 35px auto;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .contentPresentation p {
+        font-size: 11px ;
+    }
+
+    .contentPresentation h1 {
+        font-size: 30px;
+    }
+
+    .contentPresentation h1, .contentPresentation p {
+        margin: 10px auto;
+    }
+
+    .contentPresentation h2{
+        font-size: 15px;
+    }
+}
+
 

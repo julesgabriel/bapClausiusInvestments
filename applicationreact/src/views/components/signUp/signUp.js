@@ -26,13 +26,8 @@ class SignUp extends Component {
                 if ($email.value === $confirmEmail.value) {
                     if (regex.test($password.value)) {
                         if ($password.value === $confirmPassword.value) {
-                            axios.post('/api/')
-                                .then((req) => {
-                                    console.log(req)
-                                })
-                                .catch((error) => {
-                                    console.log(error)
-                                })
+
+
                         }
                     } else {
                         alert("Votre mot de passe doit avoir: \n" +
@@ -41,15 +36,12 @@ class SignUp extends Component {
                             "- Avoir un caractère spécial")
                     }
                 } else {
-                    alert("Les Emails ne correspondent pas !")
+                    alert("Les emails ne correspondent pas")
                 }
             } else {
                 alert('Les champs sont vides bichon')
             }
-
-
         };
-
 
         return (
 
@@ -65,20 +57,7 @@ class SignUp extends Component {
                         <input type="password" id="confirmPassword" placeholder="Confirmer le mot de passe"/><br/>
                         <input type="submit" id="submitSignUp" value="Prochaine étape"/><br/>
                     </form>
-                    <div className="accordeon">
-                        <div className="spanSpace" id="chevron">
-                            <span>Quelles sont les informations requises pour ouvrir un compte Clausius Investments ?</span><FontAwesomeIcon
-                            className="fasChevron" icon={faChevronDown}/><br/>
-                        </div>
-                        <div className="spanSpace" id="chevron">
-                            <span>Quelles sont les informations requises pour ouvrir un compte Clausius Investments ?</span><FontAwesomeIcon
-                            className="fasChevron" icon={faChevronDown}/><br/>
-                        </div>
-                        <div className="spanSpace" id="chevron">
-                            <span>Quelles sont les informations requises pour ouvrir un compte Clausius Investments ?</span><FontAwesomeIcon
-                            className="fasChevron" icon={faChevronDown}/>
-                        </div>
-                    </div>
+
                 </div>
                 <div className="interactions">
                     <span><u>CREER LE COMPTE</u></span><br/><br/>
