@@ -17,6 +17,10 @@ import Questions from "./views/components/questions/questions";
 import Cards from "./views/components/questions/cards/cards";
 import LogIn from "./views/components/logIn/login";
 
+import Services from "./views/components/services/services";
+
+
+
 
 function App() {
     return (

@@ -30,6 +30,7 @@
 .conceptCard{
     width: 30%;
     opacity: 0;
+    text-align: center;
 }
 
 .opacity{

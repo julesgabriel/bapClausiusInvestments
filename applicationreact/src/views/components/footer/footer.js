@@ -14,7 +14,7 @@ class Footer extends Component {
             <footer>
                 <div className="userActionsFooter">
                     <div className="newsletter">
-                        <CTA className="navButtons" content="GET NEWS !"/>
+                        <CTA className="navButtons" content="Tenez-vous au courant !"/>
                     </div>
                     <div className="signUpLogin">
                         <CTA className="navButtons" content="Se connecter"/>

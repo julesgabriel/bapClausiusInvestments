@@ -38,9 +38,9 @@ class Offers extends Component {
             console.log("ok");
             if (id === "free") {
                 this.setState({
+                    imgOffers: Liberty,
                     h2Content: "Offre Liberté",
                     content: free,
-                    imgOffers: Liberty,
                     class: " "
                 });
                 setTimeout(() => {
@@ -50,9 +50,9 @@ class Offers extends Component {
                 }, 200)
             } else if (id === "pro") {
                 this.setState({
+                    imgOffers: Pro,
                     h2Content: "Offre Pro",
                     content: pro,
-                    imgOffers: Pro,
                     classList: ""
                 });
                 setTimeout(() => {
