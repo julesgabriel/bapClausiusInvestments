@@ -51,7 +51,7 @@ class Offers extends Component {
             } else if (id === "pro") {
                 this.setState({
                     imgOffers: Pro,
-                    h2Content: "Offre Pro",
+                    h2Content: "Offre Régulier",
                     content: pro,
                     classList: ""
                 });
@@ -72,10 +72,10 @@ class Offers extends Component {
                             <p>{this.state.content}</p>
                         </div>
                         <div className="positionOffersButtons">
-                            <CTA id="pro" onClick={this.handleChange} className="navButtons" content="OFFRE PRO"/>
-                            <CTA id="free" onClick={this.handleChange} className="navButtons" content="OFFRE LIBERTE"/>
+                            <CTA id="pro" onClick={this.handleChange} className="navButtons purple"
+                                 content="OFFRE REGULIER"/>
+                            <CTA id="free" onClick={this.handleChange} className="navButtons " content="OFFRE LIBERTE"/>
                         </div>
-
                     </div>
                     <div className="adaptativImages">
                         <img src={this.state.imgOffers} alt="Offre"/>

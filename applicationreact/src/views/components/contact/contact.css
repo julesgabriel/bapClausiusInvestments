@@ -1,0 +1,62 @@
+.contact{
+    margin: 25px 0 ;
+}
+
+.signUpBox img{
+    width: 50%;
+    display: flex;
+    align-self: center;
+}
+
+.contentContact {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact h1{
+    width: 65%;
+    font-size: 60px;
+    margin: 0 auto 15px auto;
+}
+
+.contentContact{
+    margin: auto;
+}
+
+#contactForm{
+    padding: 1vh 0;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact img{
+    width: 50%;
+}
+
+#content{
+    height:100px;
+}
+
+.contact form input, .contact form textarea{
+    padding: 13px 8px 13px 5px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+    border-radius: 12px;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form textarea::placeholder{
+    color: rgba(0,0,0,0.7);
+}
+
+.contact form input:nth-child(4){
+    width: 150px;
+    margin: 15px auto 0 auto;
+}

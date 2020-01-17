@@ -1,0 +1,55 @@
+.buy {
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.buy img {
+    width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px ;
+}
+
+.values {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entry, .exit {
+    height: 100px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.number {
+    width: 70%;
+    padding: 5px 20px;
+    background-color: #1e1452;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+}
+
+.list li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.abscisse {
+    display: flex;
+    justify-content: space-around;
+}
+
+.abscisse li {
+    list-style: none;
+}

@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './signUp.css';
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronDown} from "@fortawesome/free-solid-svg-icons";
+import Register from '../../../assets/illustrations/signUp.svg';
 
 const axios = require('axios');
 
@@ -57,7 +56,7 @@ class SignUp extends Component {
                         <input type="password" id="confirmPassword" placeholder="Confirmer le mot de passe"/><br/>
                         <input type="submit" id="submitSignUp" value="Prochaine étape"/><br/>
                     </form>
-
+                    <img src={Register} alt="S'inscrire Illustration"/>
                 </div>
                 <div className="interactions">
                     <span><u>CREER LE COMPTE</u></span><br/><br/>

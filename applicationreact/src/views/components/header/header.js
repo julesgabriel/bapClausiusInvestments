@@ -43,6 +43,8 @@ class Header extends Component {
                     <ul>
                         <li>Accueil</li>
                         <li>Équipe</li>
+                        <li>Services</li>
+                        <li>Blog</li>
                     </ul>
                 </nav>
                 <div className="positionActions">

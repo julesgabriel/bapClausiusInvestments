@@ -1,37 +1,41 @@
 import React from 'react';
 import './App.css';
 
+import Accueil from './views/routes/accueil';
+import ServicesRoute from "./views/routes/services";
+import TeamRoute from "./views/routes/Team";
+import InscriptionRoute from "./views/routes/inscription";
 
-import Header from "./views/components/header/header";
-import Presentation from "./views/components/presentation/presentation";
-import Concept from "./views/components/concept/concept";
-import Offers from "./views/components/offers/offers";
-import CallToSignUp from "./views/components/callToSignUp/callToSignUp";
-import Footer from "./views/components/footer/footer";
-
-
-import Team from "./views/components/team/team";
-
-import SignUp from "./views/components/signUp/signUp";
 import Questions from "./views/components/questions/questions";
 import Cards from "./views/components/questions/cards/cards";
 import LogIn from "./views/components/logIn/login";
 
-import Services from "./views/components/services/services";
 
+import Contact from "./views/components/contact/contact";
+import LeftBar from "./views/components/leftBar/leftBar";
+import Buy from "./views/components/buy/buy";
+import Orders from "./views/components/orders/orders";
+import Bot from "./views/components/bot/bot";
+import Soldes from "./views/components/soldes/soldes";
 
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import QuestionsRoute from "./views/routes/questions";
 
 
 function App() {
     return (
         <main>
-            <Header/>
-            <Presentation/>
-            <Concept/>
-            <Offers/>
-            <CallToSignUp/>
-            <Footer/>
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={Accueil}/>
+                    <Route path="/services" component={ServicesRoute}/>
+                    <Route path="/equipe" component={TeamRoute}/>
+                    <Route path="/inscription" component={InscriptionRoute}/>
+                    <Route path="/questionnaire" component={QuestionsRoute}/>
+                    <Route path="/application/" component={QuestionsRoute}/>
 
+                </Switch>
+            </Router>
         </main>
     );
 }

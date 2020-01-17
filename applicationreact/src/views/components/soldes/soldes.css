@@ -1,0 +1,26 @@
+.soldes{
+    width: 100%;
+}
+
+.contentSoldes{
+    width: 70%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.titleSpan, .soldes img{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titleSpan h3{
+    margin-bottom: 50px;
+}
+
+.soldes img {
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+    padding: 8px;
+}

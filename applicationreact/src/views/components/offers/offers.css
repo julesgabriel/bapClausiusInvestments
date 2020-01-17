@@ -21,10 +21,11 @@
 
 .positionOffersButtons button {
     color: #1e1452;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     justify-content: space-around;
     height: 40px;
+    padding: 0 2px;
 }
 
 .contentOffers {
@@ -32,6 +33,7 @@
     width: 70%;
     text-align: center;
     white-space: pre-line;
+    line-height: 25px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -39,7 +41,7 @@
     border-radius: 10px;
     padding-bottom: 20px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .contentOffers h2 {
@@ -58,6 +60,16 @@
     animation: appear 1s ease-in-out;
 }
 
+.positionOffersButtons .navButtons {
+    background-color: #fab44b;
+    color: #1e1452;
+}
+
+.positionOffers .purple{
+    background-color: #1e1452;
+    color: #fff;
+}
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -68,9 +80,9 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .contentOffers, .positionOffersButtons {
-        padding:0;
+        padding: 0;
     }
 
     .contentOffers h2 {
@@ -90,7 +102,7 @@
 }
 
 @media screen and (max-width: 426px) {
-    .contentOffers h2{
+    .contentOffers h2 {
         font-size: 28px;
     }
 

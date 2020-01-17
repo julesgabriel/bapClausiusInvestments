@@ -32,22 +32,29 @@ class Concept extends Component {
     render() {
         return (
             <section className="concept">
-                <h2>Titre</h2>
+                <h2>Nos Produits d'investissements</h2>
                 <div ref={this.refOnScroll} className="positionConcept">
                     <Card title="Profilage"
-                          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nisi at sem iaculis venenatis.
-                      In ullamcorper suscipit ex in commodo. Aliquam varius libero at dapibus aliquet. Nullam mattis tincidunt enim.
-                      Etiam id urna id purus rutrum pharetra. Sed feugiat est urna, in fermentum neque bibendum sit amet."
+                          content=" Pour parvenir à vous comprendre ainsi que de satisfaire
+                                    votre demande voici un questionnaire nous permettant
+                                    de comprendre vos attentes.
+                                    Vous comme vos projets sont unique. Vous serez
+                                    encadrés par nos professionnels du début jusqu'à la fin."
                           img={Profilage} class={this.state.classConcept}/>
                     <Card title="Conseil"
-                          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nisi at sem iaculis venenatis.
-                      In ullamcorper suscipit ex in commodo. Aliquam varius libero at dapibus aliquet. Nullam mattis tincidunt enim.
-                      Etiam id urna id purus rutrum pharetra. Sed feugiat est urna, in fermentum neque bibendum sit amet."
+                          content=" Pour tous leurs clients, Clausius apportera un
+                                    accompagnement tout au long du
+                                    processus d’investissement, étape par étape.
+                                    Ainsi Clausius veut collaborer avec ses client en toute
+                                    confiance et transparence de leur activité."
                           img={Conseil} class={this.state.classConcept}/>
                     <Card title="Suivi"
-                          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nisi at sem iaculis venenatis.
-                      In ullamcorper suscipit ex in commodo. Aliquam varius libero at dapibus aliquet. Nullam mattis tincidunt enim.
-                      Etiam id urna id purus rutrum pharetra. Sed feugiat est urna, in fermentum neque bibendum sit amet."
+                          content=" Et si cette année, nous prenions soin de vous et de
+                                    votre épargne ? Nos équipes vous accompagneront
+                                    dans tous vos projets ainsi que dans vos investissements
+                                    pour permettre la bonne tenue et surtout la bonne
+                                    performance de vos portefeuilles financiers sur le long
+                                    terme."
                           img={Suivi} class={this.state.classConcept}/>
                 </div>
             </section>

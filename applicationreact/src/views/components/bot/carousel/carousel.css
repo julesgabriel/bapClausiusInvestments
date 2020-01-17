@@ -1,0 +1,34 @@
+.slick-prev, .slick-next {
+    z-index: 2;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: black;
+    transform: scale(2);
+}
+
+.slick-prev{
+    left: 2%;
+}
+
+.slick-next{
+    right:2%;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick', serif;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

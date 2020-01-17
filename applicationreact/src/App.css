@@ -12,7 +12,7 @@ p, a{
     font-family:'Avenir LT Std 45 Book', sans-serif;
 }
 
-h1, h2,h3{
+h1, h2,h3,li{
     font-family: "Avenir LT Std 45 Book", sans-serif;
 }
 
@@ -35,4 +35,9 @@ h3, button{
         font-size: 28px;
     }
 
+}
+
+.interfaceApp{
+    display: flex;
+    width: 100%;
 }

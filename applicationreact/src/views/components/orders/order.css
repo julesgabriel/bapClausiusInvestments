@@ -1,0 +1,32 @@
+.orders{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contentOrders{
+    display: flex;
+    justify-content: space-between;
+}
+
+.winLoss{
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+    border-radius: 15px;
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portemonnaie{
+    width: 60%;
+}
+
+.portemonnaie img{
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+    padding: 8px;
+    border-radius: 15px;
+}

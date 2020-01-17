@@ -1,0 +1,22 @@
+.leftBar{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    background-color: #E1DEFF;
+    height:92vh;
+}
+
+.leftBar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 65vh;
+    text-align: center;
+    padding: 0;
+}
+
+.leftBar ul li{
+    list-style: none;
+    font-size: 22px;
+    color: #1e1452;
+}
