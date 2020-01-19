@@ -3,10 +3,14 @@ import './signUp.css';
 
 import Register from '../../../assets/illustrations/signUp.svg';
 
+import {Redirect} from 'react-router-dom';
+
 const axios = require('axios');
 
 class SignUp extends Component {
     handleSubmit;
+
+
 
     render() {
 
@@ -26,6 +30,12 @@ class SignUp extends Component {
                     if (regex.test($password.value)) {
                         if ($password.value === $confirmPassword.value) {
 
+                            localStorage.setItem("email", $email.value);
+                            localStorage.setItem("username", $userName.value);
+                            localStorage.setItem("password", $password.value);
+                            console.log(localStorage);
+                            window.location.href="/questionnaire"
+
 
                         }
                     } else {
@@ -39,6 +49,13 @@ class SignUp extends Component {
                 }
             } else {
                 alert('Les champs sont vides bichon')
+            }
+
+            if (this.state.redirect === true){
+                return <Redirect to={'/questionnaire'}/>
+            }
+            else{
+                console.log('pb')
             }
         };
 

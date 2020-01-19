@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './footer.css';
 import CTA from "../global/button/CTA";
 
+import {Link} from 'react-router-dom'
+
 import ClausiusLogoEcrit from '../../../assets/logo-fondcouleur01.png';
 
 import Facebook from '../../../assets/illustrations/social-networks/fcb-02.svg'
@@ -17,8 +19,8 @@ class Footer extends Component {
                         <CTA className="navButtons" content="Tenez-vous au courant !"/>
                     </div>
                     <div className="signUpLogin">
-                        <CTA className="navButtons" content="Se connecter"/>
-                        <CTA className="navButtons" content="S'inscrire"/>
+                        <Link to={'/connexion'}><CTA className="navButtons" content="Se connecter"/></Link>
+                            <Link to={'/inscription'}><CTA className="navButtons" content="S'inscrire"/></Link>
                     </div>
                 </div>
                 <div className="socialCgu">
@@ -30,9 +32,9 @@ class Footer extends Component {
                         <img src={LinkedIn} alt="logo LinkedIn"/>
                     </div>
                     <div className="cguMentions">
-                        <li>Mentions légales</li>
-                        <li>Conditions générales d'utilisation</li>
-                        <li>Plan du site</li>
+                        <Link to={'/mentionslegales'}><li>Mentions légales</li></Link>
+                        <Link to={'/termsofuse'}><li>Conditions générales d'utilisation</li></Link>
+                        <Link to={'/plandusite'}><li>Plan du site</li></Link>
                     </div>
                     <div className="copyrights">
                         Copyrights

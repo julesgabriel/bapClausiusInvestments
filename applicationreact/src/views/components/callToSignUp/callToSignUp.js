@@ -7,7 +7,8 @@ class CallToSignUp extends Component {
     render() {
         return (
             <section className="callToSignUp">
-                <h2>Titre</h2>
+                <h2>Des conseillers financiers à votre écoute</h2>
+                <span></span>
                 <CTA className="navButtons" content="Inscrivez-vous !"/>
 
             </section>

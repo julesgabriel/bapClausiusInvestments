@@ -21,12 +21,19 @@ class Concept extends Component {
     }
 
     addClass = () => {
-        let heightBound = window.innerHeight;
-        if (window.scrollY + heightBound >= this.refOnScroll.current.offsetTop) {
-            this.setState({
-                classConcept: 'conceptCard opacity'
-            })
+        let url = window.location.href;
+        console.log(url);
+        if(window.location.href === "http://localhost:3000/"){
+            let heightBound = window.innerHeight;
+            if (window.scrollY + heightBound >= this.refOnScroll.current.offsetTop) {
+                this.setState({
+                    classConcept: 'conceptCard opacity'
+                })
+            }
+        }else{
+            console.log('pas de soucis');
         }
+
     };
 
     render() {

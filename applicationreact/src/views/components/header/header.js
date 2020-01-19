@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './header.css';
 
+import {Link} from 'react-router-dom'
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
 
@@ -41,20 +43,28 @@ class Header extends Component {
                 </div>
                 <nav>
                     <ul>
-                        <li>Accueil</li>
-                        <li>Équipe</li>
-                        <li>Services</li>
-                        <li>Blog</li>
+                        <Link to={'/'}>
+                            <li>Accueil</li>
+                        </Link>
+                        <Link to={'/equipe'}>
+                            <li>Équipe</li>
+                        </Link>
+                        <Link to={'/services'}>
+                            <li>Services</li>
+                        </Link>
+                        <Link to={'/blog'}>
+                            <li>Blog</li>
+                        </Link>
                     </ul>
                 </nav>
                 <div className="positionActions">
                     <div className="navActions">
-                        <CTA className="navButtons" content="Se connecter"/>
-                        <CTA className="navButtons" content="S'inscrire"/>
+                        <Link to={'/connexion'}><CTA className="navButtons" content="Se connecter"/></Link>
+                        <Link to={'/inscription'}><CTA className="navButtons" content="S'inscrire"/></Link>
                     </div>
                 </div>
                 <div className="awsBarsBox" onClick={this.handleSlideLink}>
-                    <FontAwesomeIcon id="burger" className="awesomeBars" icon={faBars} />
+                    <FontAwesomeIcon id="burger" className="awesomeBars" icon={faBars}/>
                 </div>
                 <div className={this.state.slidingLink}>
                     <FontAwesomeIcon id="cross" className="faTimesTopRight " icon={faTimes}
@@ -62,13 +72,21 @@ class Header extends Component {
                     <ul>
                         <div className="webPages">
                             <h4>Web Pages</h4>
-                            <li>Accueil</li>
-                            <li>Equipe</li>
+                            <Link to={'/'}>
+                                <li>Accueil</li>
+                            </Link>
+                            <Link to={'/equipe'}>
+                                <li>Equipe</li>
+                            </Link>
                         </div>
                         <div className="appPages">
                             <h4>App Pages</h4>
-                            <li>Inscription</li>
-                            <li>Connexion</li>
+                            <Link to={'/inscription'}>
+                                <li>Inscription</li>
+                            </Link>
+                            <Link to={'/connexion'}>
+                                <li>Connexion</li>
+                            </Link>
                         </div>
                     </ul>
                 </div>

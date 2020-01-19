@@ -18,6 +18,10 @@ class Questions extends Component {
         }
     };
 
+    componentDidMount() {
+        console.log(localStorage);
+    }
+
     render() {
 
         const questionNumber = 20;
@@ -36,7 +40,12 @@ class Questions extends Component {
             let aPercent = numOfA * multiplicator;
             let bPercent = numOfB * multiplicator;
             let cPercent = numOfC * multiplicator;
-            let DPercent = numOfD * multiplicator;
+            let dPercent = numOfD * multiplicator;
+
+            console.log(aPercent);
+            console.log(bPercent);
+            console.log(cPercent);
+            console.log(dPercent);
 
             axios.post('api/inscription/', {
 

@@ -2,6 +2,8 @@
     width: 100%;
     margin: 15px auto;
     background-color: #f1f2f3;
-    border: 1px solid rgba(0,0,0,0.4);
     border-radius: 4px;
+    padding: 30px;
+    border: none;
+    box-shadow: 0 0 4px rgba(0,0,0,0.8);
 }
