@@ -20,3 +20,9 @@
     font-size: 22px;
     color: #1e1452;
 }
+
+.background{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px
+}

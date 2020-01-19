@@ -1,9 +1,13 @@
 .orders{
-    margin: 0 auto;
+    margin: 30px auto;
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.orders h3{
+    margin-bottom: 20px;
 }
 
 .contentOrders{

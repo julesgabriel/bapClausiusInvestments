@@ -21,6 +21,10 @@ import Soldes from "./views/components/soldes/soldes";
 import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import QuestionsRoute from "./views/routes/questions";
 import Connexion from "./views/routes/connexion";
+import OrdersRoute from "./views/routes/orders";
+import BuyRoutes from "./views/routes/Buy";
+import SoldesRoutes from "./views/routes/soldes";
+import BotRoute from "./views/routes/bot";
 
 
 function App() {
@@ -35,6 +39,12 @@ function App() {
                     <Route path="/questionnaire" component={QuestionsRoute}/>
                     <Route path="/application/" component={QuestionsRoute}/>
                     <Route path="/connexion" component={Connexion}/>
+
+                    <Route path="/app/transactions" component={OrdersRoute}/>
+                    <Route path="/app/ordres" component={BuyRoutes}/>
+                    <Route path="/app/soldes" component={SoldesRoutes}/>
+                    <Route path="/app/bot" component={BotRoute}/>
+
 
                 </Switch>
             </Router>
