@@ -1,0 +1,12 @@
+.allPart{
+    display: flex;
+    width: 100%;
+}
+
+.leftPart{
+    width: 52%;
+}
+
+.rightPart{
+    width: 45%;
+}

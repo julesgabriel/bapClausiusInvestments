@@ -20,6 +20,7 @@ import Soldes from "./views/components/soldes/soldes";
 
 import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import QuestionsRoute from "./views/routes/questions";
+import Connexion from "./views/routes/connexion";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
                     <Route path="/inscription" component={InscriptionRoute}/>
                     <Route path="/questionnaire" component={QuestionsRoute}/>
                     <Route path="/application/" component={QuestionsRoute}/>
+                    <Route path="/connexion" component={Connexion}/>
 
                 </Switch>
             </Router>
