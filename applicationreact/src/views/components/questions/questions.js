@@ -24,7 +24,7 @@ class Questions extends Component {
 
     render() {
 
-        const questionNumber = 20;
+        const questionNumber = 2;
 
         this.answers = [];
 
@@ -49,13 +49,22 @@ class Questions extends Component {
 
             axios.post('api/inscription/', {
 
-                /** insérer les valeurs ici*/
+                user: localStorage.getItem('user'),
+                password: localStorage.getItem('password'),
+                email: localStorage.getItem('email'),
+                answers_A: aPercent,
+                answers_B: bPercent,
+                answers_C: cPercent,
+                answers_D: dPercent,
 
-            }).then((response) => {
-                console.log(response)
             }).catch((err) => {
                 console.log(err.response.data)
-            })
+            }).then((response) => {
+                console.log(response);
+
+            });
+
+            window.location.href = "/questionnaire";
         };
 
         this.submitQuestions = (event) => {

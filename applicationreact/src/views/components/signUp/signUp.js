@@ -29,9 +29,8 @@ class SignUp extends Component {
                 if ($email.value === $confirmEmail.value) {
                     if (regex.test($password.value)) {
                         if ($password.value === $confirmPassword.value) {
-
                             localStorage.setItem("email", $email.value);
-                            localStorage.setItem("username", $userName.value);
+                            localStorage.setItem("user", $userName.value);
                             localStorage.setItem("password", $password.value);
                             console.log(localStorage);
                             window.location.href="/questionnaire"
@@ -49,13 +48,6 @@ class SignUp extends Component {
                 }
             } else {
                 alert('Les champs sont vides bichon')
-            }
-
-            if (this.state.redirect === true){
-                return <Redirect to={'/questionnaire'}/>
-            }
-            else{
-                console.log('pb')
             }
         };
 
