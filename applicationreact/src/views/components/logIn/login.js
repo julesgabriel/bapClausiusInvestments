@@ -22,7 +22,7 @@ class LogIn extends Component {
 
             });
 
-            let number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            const number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
             let generatedNumber = [];
             for (let i = 0; i <= 6; i++) {
                 let rand = Math.floor(Math.random() * number.length);

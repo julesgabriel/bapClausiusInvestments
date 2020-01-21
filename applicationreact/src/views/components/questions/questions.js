@@ -4,6 +4,7 @@ import Cards from "./cards/cards";
 import './questions.css';
 
 const axios = require('axios');
+const qs = require('qs');
 
 class Questions extends Component {
     submitQuestions;
@@ -24,7 +25,7 @@ class Questions extends Component {
 
     render() {
 
-        const questionNumber = 2;
+        const questionNumber = 4;
 
         this.answers = [];
 
@@ -33,8 +34,7 @@ class Questions extends Component {
             this.answers.push(value);
         };
 
-        this.calculate = (numOfA, numOfB, numOfC, numOfD) => {
-
+        this.calculate = (numOfA, numOfB, numOfC, numOfD, event) => {
             let multiplicator = 100 / questionNumber;
 
             let aPercent = numOfA * multiplicator;
@@ -47,8 +47,8 @@ class Questions extends Component {
             console.log(cPercent);
             console.log(dPercent);
 
-            axios.post('api/inscription/', {
 
+            const data = {
                 user: localStorage.getItem('user'),
                 password: localStorage.getItem('password'),
                 email: localStorage.getItem('email'),
@@ -56,15 +56,18 @@ class Questions extends Component {
                 answers_B: bPercent,
                 answers_C: cPercent,
                 answers_D: dPercent,
+            };
 
-            }).catch((err) => {
+            axios.post('http://localhost/bapClausiusInvestments/applicationreact/src/views/api/user.php', qs.stringify(data,  console.log(qs.stringify(data)))
+
+            ).catch((err) => {
                 console.log(err.response.data)
             }).then((response) => {
                 console.log(response);
-
             });
 
-            window.location.href = "/questionnaire";
+
+
         };
 
         this.submitQuestions = (event) => {

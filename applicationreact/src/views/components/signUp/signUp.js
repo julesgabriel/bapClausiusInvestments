@@ -6,6 +6,7 @@ import Register from '../../../assets/illustrations/signUp.svg';
 import {Redirect} from 'react-router-dom';
 
 const axios = require('axios');
+const crypto = require('crypto');
 
 class SignUp extends Component {
     handleSubmit;
@@ -28,14 +29,13 @@ class SignUp extends Component {
             if ($userName.value && $email.value && $password.value && $confirmEmail.value && $confirmPassword.value !== '') {
                 if ($email.value === $confirmEmail.value) {
                     if (regex.test($password.value)) {
+                        const hashPwd = crypto.createHash('sha1').update($password.value).digest('hex');
                         if ($password.value === $confirmPassword.value) {
                             localStorage.setItem("email", $email.value);
                             localStorage.setItem("user", $userName.value);
-                            localStorage.setItem("password", $password.value);
+                            localStorage.setItem("password", hashPwd);
                             console.log(localStorage);
                             window.location.href="/questionnaire"
-
-
                         }
                     } else {
                         alert("Votre mot de passe doit avoir: \n" +
@@ -47,7 +47,7 @@ class SignUp extends Component {
                     alert("Les emails ne correspondent pas")
                 }
             } else {
-                alert('Les champs sont vides bichon')
+                alert('Les champs sont vides')
             }
         };
 

@@ -10,7 +10,6 @@ import Questions from "./views/components/questions/questions";
 import Cards from "./views/components/questions/cards/cards";
 import LogIn from "./views/components/logIn/login";
 
-
 import Contact from "./views/components/contact/contact";
 import LeftBar from "./views/components/leftBar/leftBar";
 import Buy from "./views/components/buy/buy";
@@ -25,7 +24,6 @@ import OrdersRoute from "./views/routes/orders";
 import BuyRoutes from "./views/routes/Buy";
 import SoldesRoutes from "./views/routes/soldes";
 import BotRoute from "./views/routes/bot";
-
 
 function App() {
     return (
@@ -44,8 +42,6 @@ function App() {
                     <Route path="/app/ordres" component={BuyRoutes}/>
                     <Route path="/app/soldes" component={SoldesRoutes}/>
                     <Route path="/app/bot" component={BotRoute}/>
-
-
                 </Switch>
             </Router>
         </main>
