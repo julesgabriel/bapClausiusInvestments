@@ -25,7 +25,7 @@ class Questions extends Component {
 
     render() {
 
-        const questionNumber = 4;
+        const questionNumber = 1;
 
         this.answers = [];
 
@@ -34,7 +34,7 @@ class Questions extends Component {
             this.answers.push(value);
         };
 
-        this.calculate = (numOfA, numOfB, numOfC, numOfD, event) => {
+        this.calculate = (numOfA, numOfB, numOfC, numOfD) => {
             let multiplicator = 100 / questionNumber;
 
             let aPercent = numOfA * multiplicator;
@@ -65,6 +65,8 @@ class Questions extends Component {
             }).then((response) => {
                 console.log(response);
             });
+
+            console.log(localStorage);
 
 
 
