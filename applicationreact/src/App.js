@@ -24,6 +24,7 @@ import OrdersRoute from "./views/routes/orders";
 import BuyRoutes from "./views/routes/Buy";
 import SoldesRoutes from "./views/routes/soldes";
 import BotRoute from "./views/routes/bot";
+import BlogRoute from "./views/routes/blog";
 
 function App() {
     return (
@@ -37,6 +38,8 @@ function App() {
                     <Route path="/questionnaire" component={QuestionsRoute}/>
                     <Route path="/application/" component={QuestionsRoute}/>
                     <Route path="/connexion" component={Connexion}/>
+
+                    <Route path="/blog" component={BlogRoute}/>
 
                     <Route path="/app/transactions" component={OrdersRoute}/>
                     <Route path="/app/ordres" component={BuyRoutes}/>

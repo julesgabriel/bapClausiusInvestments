@@ -68,6 +68,10 @@ footer {
     color: #FFFFFF;
 }
 
+.cguMentions a{
+    color: #FFFFFF;
+}
+
 .copyrights {
     flex-direction: column-reverse;
     justify-content: normal;

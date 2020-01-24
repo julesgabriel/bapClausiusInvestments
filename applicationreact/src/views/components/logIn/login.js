@@ -31,7 +31,6 @@ class LogIn extends Component {
                     console.log('OK NICE');
                     localStorage.setItem("user", responseUser);
                     localStorage.setItem("email", responseEmail);
-                    localStorage.setItem("password", responsePassword);
                     localStorage.setItem("connected", "true");
                     console.log(localStorage)
                 }
