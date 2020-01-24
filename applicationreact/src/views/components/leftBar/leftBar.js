@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import './leftBar.css'
-
+import {Link} from 'react-router-dom'
 
 class LeftBar extends Component {
     changeBackground;
@@ -20,15 +20,17 @@ class LeftBar extends Component {
 
 
     componentDidMount() {
-        this.changeBackground()
+        if (localStorage.connected !== "true") {
+            window.location.href = "http://localhost:3000"
+        } else {
+            this.changeBackground()
+        }
     }
 
     render() {
 
         this.changeBackground = () => {
             let url = window.location.href;
-            console.log(url);
-
             switch (url) {
                 case "http://localhost:3000/app/ordres":
                     this.setState({firstLiClass: 'background'});
@@ -50,10 +52,10 @@ class LeftBar extends Component {
         return (
             <div className="leftBar">
                 <ul>
-                    <li className={this.state.firstLiClass}>Achat</li>
-                    <li className={this.state.secondLiClass}>Ordres</li>
-                    <li className={this.state.thirdLiClass}>Solde</li>
-                    <li className={this.state.fourthLiClass}>Bot de la semaine</li>
+                    <li className={this.state.firstLiClass}><Link to={"/app/transactions"}>Achat</Link></li>
+                    <li className={this.state.secondLiClass}><Link to={"/app/ordres"}>Ordres</Link></li>
+                    <li className={this.state.thirdLiClass}><Link to={"/app/soldes"}>Soldes</Link></li>
+                    <li className={this.state.fourthLiClass}><Link to={"/app/bot"}>Bot de la semaine</Link></li>
                 </ul>
             </div>
 

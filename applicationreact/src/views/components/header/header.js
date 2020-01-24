@@ -16,7 +16,23 @@ class Header extends Component {
         super(props);
         this.state = {
             slidingLink: "slidingLink none",
+            navFromURl: "positionActions",
+            profile: "none"
         };
+    }
+
+    componentDidMount() {
+        let url = window.location.href;
+        if (url.split('/')[3] === 'app') {
+            this.setState({
+                navFromUrl: "none",
+                profile: "profile"
+            })
+        } else {
+            this.setState({
+                navFromUrl: "positionActions",
+            })
+        }
     }
 
     render() {
@@ -57,11 +73,14 @@ class Header extends Component {
                         </Link>
                     </ul>
                 </nav>
-                <div className="positionActions">
+                <div className={this.state.navFromUrl}>
                     <div className="navActions">
                         <Link to={'/connexion'}><CTA className="navButtons" content="Se connecter"/></Link>
                         <Link to={'/inscription'}><CTA className="navButtons" content="S'inscrire"/></Link>
                     </div>
+                </div>
+                <div className={this.state.profile}>
+                    <CTA className="navButtons" content={localStorage.user}/>
                 </div>
                 <div className="awsBarsBox" onClick={this.handleSlideLink}>
                     <FontAwesomeIcon id="burger" className="awesomeBars" icon={faBars}/>
@@ -69,6 +88,8 @@ class Header extends Component {
                 <div className={this.state.slidingLink}>
                     <FontAwesomeIcon id="cross" className="faTimesTopRight " icon={faTimes}
                                      onClick={this.handleSlideLink}/>
+
+
                     <ul>
                         <div className="webPages">
                             <h4>Web Pages</h4>

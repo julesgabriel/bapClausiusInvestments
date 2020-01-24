@@ -25,7 +25,7 @@ class Questions extends Component {
 
     render() {
 
-        const questionNumber = 1;
+        const questionNumber = 5;
 
         this.answers = [];
 

@@ -4,6 +4,7 @@ require './includes/dbconnect.php';
 
 
 $data = json_decode(file_get_contents("php://input"), true);
+
 if (isset($_POST) && !empty($_POST)) {
 
 
@@ -22,6 +23,22 @@ if (isset($_POST) && !empty($_POST)) {
 }
 else if(isset($_GET) && !empty($_GET)){
 
+
+    $user = $data['user'];
+
+
+    $qry = $db->prepare('SELECT * from user WHERE user= ?');
+
+    $qry->execute(array($_GET["user"]));
+
+    $ans = $qry->fetchAll();
+
+    $infos = array_map(function ($dbentry) {
+        return array('user' => $dbentry['user'],
+            'email' => $dbentry['email'],
+            'password' => $dbentry['password']);
+    }, $ans);
+    echo json_encode(array('infos' => $infos));
 }
 
 
